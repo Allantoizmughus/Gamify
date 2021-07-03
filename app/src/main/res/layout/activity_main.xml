@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/AppName"
@@ -15,6 +16,7 @@
         android:layout_marginTop="35dp"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@color/accent"
         tools:ignore="HardcodedText" />
 
     <EditText
@@ -24,6 +26,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:hint="Enter Category"
+        android:background="@color/accent"
         android:layout_marginBottom="50dp"/>
 
     <Button
@@ -33,6 +36,6 @@
         android:text="View Category"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false" />
 
 </RelativeLayout>
