@@ -2,16 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:textStyle="bold"
         android:padding="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:text="Choose mode of contact"
         android:layout_gravity="center_horizontal"
         android:textAlignment="center"/>
@@ -19,14 +19,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_marginTop="50dp">
+        android:orientation="horizontal">
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:id="@+id/moodRadioGroup"
+            android:id="@+id/contactsRadioGroup"
             android:padding="10dp">
 
             <RadioButton
@@ -46,7 +45,7 @@
                 android:text="Choose"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/submitButton"
+                android:id="@+id/chooseButton"
                 tools:ignore="ObsoleteLayoutParam" />
 
             <Button
@@ -55,5 +54,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/cancelButton"/>
         </RadioGroup>
+
     </LinearLayout>
+
 </LinearLayout>
