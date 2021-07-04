@@ -5,9 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -27,6 +30,14 @@ public class GamesListActivity extends AppCompatActivity {
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,games);
         mListView.setAdapter(adapter);
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                String game = ((TextView)view).getText().toString();
+                Toast.makeText(GamesListActivity.this, game, Toast.LENGTH_LONG).show();
+            }
+        } );
 
         Intent intent= getIntent();
         String category = intent.getStringExtra("category");
