@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @BindView(R.id.ViewCategoryButton) Button mViewCategoryButton;
     @BindView(R.id.category) EditText mCategory;
     @BindView(R.id.AppName) TextView mAppName;
+    @BindView(R.id.contacts) Button mContactsButton;
 
 
     @Override
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ButterKnife.bind(this);
 
         mViewCategoryButton.setOnClickListener(this);
+        mContactsButton.setOnClickListener(this);
     }
 
     @Override
@@ -34,6 +36,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(MainActivity.this, GamesListActivity.class);
             intent.putExtra("category",category);
             startActivity(intent);
-        }else if(v == mContactsButton)
+        }else if(v == mContactsButton){
+            Intent intent = new Intent(MainActivity.this,ContactsActivity.class);
+            startActivity(intent);
+        }
     }
 }
