@@ -16,4 +16,15 @@
         android:background="@color/accent"
         android:fontFamily="@font"
         android:text="Category X List" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView"
+        android:layout_below="@+id/CategoryList"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/accent"/>
+
+
 </RelativeLayout>
