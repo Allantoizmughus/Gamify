@@ -12,7 +12,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class GamesList extends AppCompatActivity {
+public class GamesListActivity extends AppCompatActivity {
     @BindView(R.id.CategoryList) TextView mCategoryView;
     @BindView(R.id.listView) ListView mListView;
 

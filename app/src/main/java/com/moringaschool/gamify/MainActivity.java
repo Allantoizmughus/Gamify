@@ -3,7 +3,6 @@ package com.moringaschool.gamify;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.icu.util.ULocale;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if (v == mViewCategoryButton) {
             String category = mCategory.getText().toString();
-            Intent intent = new Intent(MainActivity.this, GamesList.class);
+            Intent intent = new Intent(MainActivity.this, GamesListActivity.class);
             intent.putExtra("category",category);
         }
     }
