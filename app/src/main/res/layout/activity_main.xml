@@ -4,8 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/black">
+    android:background="@color/black"
+    android:backgroundTint="#02FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bgpic1" />
 
     <TextView
         android:id="@+id/AppName"
@@ -26,25 +35,25 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/AppName"
         android:layout_centerHorizontal="true"
-        android:hint="Enter Category"
+        android:layout_marginTop="100dp"
         android:background="@color/accent"
-        android:layout_marginTop="100dp"/>
+        android:hint="Enter Category" />
 
     <Button
         android:id="@+id/ViewCategoryButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View Category"
         android:layout_below="@+id/category"
         android:layout_centerHorizontal="true"
+        android:text="View Category"
         android:textAllCaps="false" />
 
     <Button
         android:id="@+id/contacts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contacts"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:text="Contacts" />
 
 </RelativeLayout>
