@@ -30,7 +30,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        String location = mCategory.getText().toString();
-        Intent intent = new Intent(MainActivity.this, GamesList.class);
+        if (v == mViewCategoryButton) {
+            String category = mCategory.getText().toString();
+            Intent intent = new Intent(MainActivity.this, GamesList.class);
+            intent.putExtra("category",category);
+        }
     }
 }
