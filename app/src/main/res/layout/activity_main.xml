@@ -23,19 +23,27 @@
         android:id="@+id/category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/AppName"
         android:layout_centerHorizontal="true"
         android:hint="Enter Category"
         android:background="@color/accent"
-        android:layout_marginBottom="50dp"/>
+        android:layout_marginTop="100dp"/>
 
     <Button
         android:id="@+id/ViewCategoryButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="View Category"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/category"
         android:layout_centerHorizontal="true"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contacts"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

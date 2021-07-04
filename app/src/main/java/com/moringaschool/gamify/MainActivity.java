@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String category = mCategory.getText().toString();
             Intent intent = new Intent(MainActivity.this, GamesListActivity.class);
             intent.putExtra("category",category);
-        }
+            startActivity(intent);
+        }else if(v == mContactsButton)
     }
 }
