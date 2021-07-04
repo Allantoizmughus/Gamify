@@ -11,10 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="35dp"
         android:layout_centerInParent="true"
+        android:layout_marginTop="35dp"
         android:background="@color/accent"
-        android:fontFamily="@font"
+        android:fontFamily="@font/merienda_one"
         android:text="Category X List" />
 
     <ListView
